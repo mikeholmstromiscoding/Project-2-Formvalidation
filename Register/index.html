@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb3fda9d53.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <nav class="navbar text-center">
+        <div class="container">
+            <span class="navbar-brand">
+                <h1>Register</h1>
+            </span>
+        </div>
+    </nav>
+    <section id="regForm">
+        <div class="container">
+            <div class="info">
+                <p class="text-center">Wanna get early access to Bootstrap 5? <br> Register below!</p>
+            </div>
+            <form id="formReg">
+                <div class="form-group">
+                    <label for="firstName"></label>
+                    <input id="firstName" class="form-control" type="text" name="firstname" placeholder="First Name" autocomplete="off">
+                    <div id="error_firstName" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName"></label>
+                    <input id="lastName" class="form-control" type="text" name="lastname" placeholder="Last Name" autocomplete="off">
+                     <div id="error_lastName" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input id="email" class="form-control" type="text" name="email" placeholder="Email Address" autocomplete="off">
+                     <div id="error_email" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label for="passWord"></label>
+                    <input id="passWord" class="form-control" type="password" name="password" placeholder="Password" autocomplete="off">
+                    <div id="error_passWord" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label for="passWord2"></label>
+                    <input id="passWord2" class="form-control" type="password" name="password2" placeholder="Confirm Password" autocomplete="off">
+                    <div id="error_passWord2" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group span-full">
+                    <label for="message"></label>
+                    <textarea id="textArea" class="form-control2" name="message" cols="" rows=""
+                        placeholder="Tell us about your coding experience"></textarea>
+                        <div id="error_textArea" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <div class="membership">
+                         <label for="memberShip">Membership:</label>
+                         <input id="memberShip1" type="radio" name="memberShip" value="Basic"><span> Basic (Free)</span>
+                         <input id="memberShip2" type="radio" name="memberShip" value="Pro"><span> Pro (10$)</span>
+                         <input id="memberShip3" type="radio" name="memberShip" value="Super-Pro"><span> Super Pro (20$)</span>
+                    </div>
+                    <div id="error_memberShip" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group select-box">
+                    <label for="country"></label>
+                    <select id="country">
+                        <option value="SELECT">Select Country</option>
+                        <option value="SWE">Sweden</option>
+                        <option value="NOR">Norway</option>
+                        <option value="FIN">Finland</option>
+                    </select>
+                    <div id="error_country" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group checkbox">
+                    <input id="checkBox" type="checkbox" name="checkbox">
+                    <label for="checkBox">By creating an account you agree to our <a href="#">terms of use & privacy.</a></label>
+                    <div id="error_checkBox" class="invalid-feedback"></div>
+                </div>
+                <button id="btnSubmit" type="submit" class="btn-form">Register</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer container">
+        <div class="footer-wrapper">
+            <p class="footer-info text-center">Already have an account? <a href="/SignIn/index.html">Login here</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

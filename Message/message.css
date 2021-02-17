@@ -1,0 +1,43 @@
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body html {
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    color: #fff;
+    background: #1FA2B8;
+}
+
+@media(max-width: 576px) {
+    h1 {
+        font-size: 1.2rem;
+        
+    }
+
+    p {
+        font-size: small;
+        
+    }
+}
+
